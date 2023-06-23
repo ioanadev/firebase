@@ -1,0 +1,72 @@
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+<include src="./partials/auth.html"></include>
+<!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<header class="container">
+  <div class="header__container">
+    <div class="header__container--bar">
+      <section class="header__navigation" style="background-color: none">
+        <ul class="header__navigation__menu">
+          <li class="header__navigation__menu__item">
+            <a href="./index.html" class="header__navigation__menu__item--link"
+              >Home</a
+            >
+          </li>
+          <li
+            class="header__navigation__menu__item header__navigation__menu--named"
+          >
+            <a
+              href="./library.html"
+              class="header__navigation__menu__item--link"
+              >My library</a
+            >
+          </li>
+        </ul>
+      </section>
+      <div class="header__library">
+        <button
+          type="button"
+          class="btns-container__btn active-library"
+          data-whichLibrary="watched"
+        >
+          Watched
+        </button>
+        <button
+          type="button"
+          class="btns-container__btn"
+          data-whichLibrary="queue"
+        >
+          Queue
+        </button>
+        <!-- <ul class="header__btn">
+          <li class="header__watched--item header__watched--selected">
+            <button class="header__watched--item-link">Watched</button>
+          </li>
+          <li class="header__queue--item">
+            <button class="header__queue--item-link">Queue</button>
+          </li>
+        </ul> -->
+      </div>
+      <!--<form class="header__search" id="form__search">
+          <span class="header__search__container">
+            <input type="text" placeholder="Movie search" autocomplete="off" />
+            <button type="submit">
+              <svg class="header__search__container--icon">
+                <use href="/src/images/icons8-search.svg"></use>
+              </svg>
+            </button>
+          </span>
+        </form>-->
+    </div>
+    <div class="header__container__logo">
+      <a href="./index.html" class="header__container__logo--link">
+        <span class="header__container__logo--icon">
+          <svg class="header__container__logo--icon-svg">
+            <use href="images/symbol-defs.svg#icon-film"></use>
+          </svg>
+        </span>
+        <h1 class="header__title">Filmoteka</h1>
+      </a>
+    </div>
+  </div>
+</header>

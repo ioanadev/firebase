@@ -1,0 +1,85 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 320px;
+    padding: 0 20px;
+
+    gap: $gap;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: $white-color;
+
+    &:hover {
+      background-color: $brand-color;
+      color: $white-color;
+    }
+
+    &:active {
+      background-color: $brand-color;
+      color: $white-color;
+    }
+  }
+}
+.darkmode .pagination__button {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+.active {
+  background-color: $brand-color;
+  color: $white-color;
+}
+.darkmode .active {
+  background-color: $brand-color;
+  color: $white-color;
+}
+.darkmode .pagination__button:hover {
+  background-color: $brand-color;
+  color: $white-color;
+}
+.number-buttons {
+  display: flex;
+}
+
+.next-btn,
+.prev-btn {
+  background-color: $grey-bg;
+}
+
+.dot-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: $grey-bg;
+  font-weight: 900;
+}
+.darkmode .dot-btn {
+  color: #fff;
+  background-color: #2b2b2b;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    flex-basis: 768px;
+
+    &__container {
+      flex-basis: 374px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pagination {
+    flex-basis: 1280px;
+  }
+}

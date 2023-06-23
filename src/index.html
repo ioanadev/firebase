@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/example.html"></include>
+
+    <!--Header-->
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <!--Carousel-->
+      <include src="./partials/carousel.html"></include>
+
+      <!-- movies gallery -->
+      <include src="./partials/cards.html"></include>
+
+      <!-- popUp-->
+      <include src="./partials/popUpWindow.html"></include>
+
+      <!-- buttons for pagination -->
+      <include src="./partials/pagination.html"></include>
+    </main>
+
+    <!--dark/light mode-->
+    <include src="./partials/dark-light mode.html"></include>
+
+    <!--Footer-->
+
+    <include src="./partials/footer.html"></include>
+
+    <div class="sroll-btn-container">
+      <button type="button" class="scroll-btn" id="scrollToTopBtn">
+        <svg class="scroll-btn__icon">
+          <use href="images/symbol-defs2.svg#icon-eject"></use>
+        </svg>
+      </button>
+    </div>
+
+    <include src="./partials/teamModal.html"></include>
+
+    <!-- main script -->
+
+    <script src="./js-files/modalWindw.js" type="module"></script>
+    <script src="./js-files/teamModal.js" type="module"></script>
+  </body>
+</html>

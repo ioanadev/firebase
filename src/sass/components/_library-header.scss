@@ -1,0 +1,29 @@
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &__btn {
+    background-color: $white-color;
+    color: $brand-color;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px 23px;
+    border: 1px solid $white-color;
+    border-radius: 100px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.active-library {
+  color: $white-color;
+  background-color: #B92F2C;
+  box-shadow: 0px 0px 7px rgba(27, 27, 27, 0.15)
+}
